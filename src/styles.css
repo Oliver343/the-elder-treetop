@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+ @font-face {
+    font-family: "root";
+    src: local("Luminari"), url(assets/fonts/Luminari-Regular.ttf) format('truetype');
+  }
+
+/* @font-face {
+    font-family: "root";
+    src: local("Oxygen"), url(./assets/fonts/Oxygen/Oxygen-Regular.ttf) format("truetype");
+} */
+
+ * {
+    background-color: #5d7d59;
+    color: rgb(35, 35, 35);
+    font-family: 'root';
+  } 
+
+  hr { background-color: #353535; height: 2px; border: 0; }
