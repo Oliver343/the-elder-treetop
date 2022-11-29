@@ -6,9 +6,15 @@ import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
 import { PassVariableComponent } from './body/pass-variable/pass-variable.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { QuickComponent } from './admin/quick/quick.component';
 
 @NgModule({
-  declarations: [AppComponent, BodyComponent, PassVariableComponent],
+  declarations: [
+    AppComponent,
+    BodyComponent,
+    PassVariableComponent,
+    QuickComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
