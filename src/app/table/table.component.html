@@ -1,0 +1,35 @@
+<div>
+    <ngx-datatable [rows]="rows" > 
+        <ngx-datatable-column name="Name"></ngx-datatable-column>
+        <ngx-datatable-column
+        [width]="30"
+        [sortable]="false"
+        [canAutoResize]="false"
+        [draggable]="false"
+        [resizeable]="false"
+      >
+        <ng-template
+          ngx-datatable-header-template
+          let-value="value"
+          let-allRowsSelected="allRowsSelected"
+          let-selectFn="selectFn"
+        >
+          {{ value }}
+        </ng-template>
+        {{ arrayDemo[1] }}
+        <ng-template
+          ngx-datatable-cell-template
+          let-value="value"
+          let-isSelected="isSelected"
+          let-onCheckboxChangeFn="onCheckboxChangeFn"
+        >{{ arrayDemo[0] }}
+          <input type="checkbox" [checked]="isSelected" (change)="onCheckboxChangeFn($event)" />
+        </ng-template>
+      </ngx-datatable-column>
+        <ngx-datatable-column name="Gender"></ngx-datatable-column>
+        <ngx-datatable-column name="Company"></ngx-datatable-column>
+    </ngx-datatable>
+  </div>
+
+
+  
